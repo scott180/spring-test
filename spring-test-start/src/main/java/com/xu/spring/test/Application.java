@@ -1,4 +1,4 @@
-package com.xu.spring.test.start;
+package com.xu.spring.test;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
