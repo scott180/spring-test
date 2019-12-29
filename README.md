@@ -1,0 +1,28 @@
+## README
+> spring-test
+
+*   [1、初始化 多模块](#initializr)
+*   [2、说明](#introducer)
+
+> [markdown]( https://jbt.github.io/markdown-editor/ )    [马克飞象]( https://maxiang.io )   [作业部落]( https://www.zybuluo.com/mdeditor )    
+
+> [github]( https://github.com/scott180 )  [gitlab]( https://git.lug.ustc.edu.cn/ja )     [gitee]( https://gitee.com )
+
+
+ <h2 id="initializr"></h2>
+
+### 1、初始化
+
+>Initializr
+https://blog.csdn.net/qq122516902/article/details/84584439
+https://blog.csdn.net/qq_37174383/article/details/86702030
+
+<h2 id="introducer"></h2>
+
+### 2、说明
+>[springboot初始化]( https://start.spring.io/ ) &  [2小时学会springboot]( https://blog.csdn.net/forezp/article/details/61472783 )  &  [springCloud教程]( https://blog.csdn.net/forezp/article/details/70148833 )
+
+http://localhost:8080/hello
+
+>整合mybatis
+https://blog.csdn.net/iku5200/article/details/82856621
