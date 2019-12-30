@@ -26,3 +26,9 @@ http://localhost:8080/hello
 
 >整合mybatis
 https://blog.csdn.net/iku5200/article/details/82856621
+
+>mybatis-generator
+https://www.imooc.com/article/28494?block_id=tuijian_wz
+
+mvn mybatis-generator:generate
+如果是在intellij 环境，直接鼠标点击 Maven-Plugins-mybatis-generator:generate
