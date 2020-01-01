@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e856807c-eb9f-487a-ac0f-2e64ef1c6dc3" name="Default Changelist" comment="http://localhost:8080/user/queryUserList">
-      <change afterPath="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/UserSexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/util/CopyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java" afterDir="false" />
+    <list default="true" id="e856807c-eb9f-487a-ac0f-2e64ef1c6dc3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-test-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-dal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-dal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-start/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,16 +21,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+            <state relative-caret-position="134">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,56 +42,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.2.RELEASE/spring-web-5.2.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+            <state relative-caret-position="-50">
+              <caret line="29" column="63" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/reflect/InvocationTargetException.java">
+        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="126">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2894#2895#0" expanded="true" />
+                <element signature="e#2927#2928#0" expanded="true" />
+                <element signature="e#2977#2978#0" expanded="true" />
+                <element signature="e#3021#3022#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="25">
+              <caret line="116" column="67" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
                 <element signature="e#578#579#0" expanded="true" />
                 <element signature="e#606#607#0" expanded="true" />
@@ -142,42 +126,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/ResultEnum.java">
+        <entry file="file://$PROJECT_DIR$/spring-test-dal/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="-525" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-test-start/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/UserSexEnum.java">
+        <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-              <folding>
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/util/CopyUtil.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/Date.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="2226">
+              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,10 +172,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-common/pom.xml">
+        <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="128">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1050#1051#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -227,11 +218,9 @@
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/User.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserMapper.xml" />
         <option value="$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/Application.java" />
-        <option value="$PROJECT_DIR$/spring-test-start/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/spring-test-start/src/main/resources/generator/mybatis-generator.sh" />
         <option value="$PROJECT_DIR$/spring-test-start/src/test/java/com/xu/spring/test/dal/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/Application.java" />
-        <option value="$PROJECT_DIR$/spring-test-start/pom.xml" />
         <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/query/BaseQuery.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/BaseMapper.java" />
@@ -253,9 +242,12 @@
         <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/util/BeanUt.java" />
         <option value="$PROJECT_DIR$/spring-test-common/pom.xml" />
         <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/util/CopyUtil.java" />
-        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/UserSexEnum.java" />
         <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-test-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-test-start/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserDO.java" />
+        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java" />
       </list>
     </option>
   </component>
@@ -275,6 +267,15 @@
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spring-test-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -367,6 +368,68 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
@@ -470,6 +533,14 @@
             </path>
             <path>
               <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-test" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-test-start" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -515,51 +586,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -572,7 +598,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -685,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577862109066</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="/user/queryUserList">
+      <created>1577870139227</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577870139227</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -701,17 +734,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8375839" weight="0.45790252" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8013423" visible="true" weight="0.40177253" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8362416" weight="0.45790252" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7986577" visible="true" weight="0.40177253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.38109306" />
       <window_info anchor="bottom" id="Log Analyzer" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.15214181" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.19865772" side_tool="true" visible="true" weight="0.40177253" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20134228" side_tool="true" visible="true" weight="0.40177253" />
       <window_info anchor="bottom" id="SOQL Query" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4986577" weight="0.32791728" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49530202" weight="0.32791728" />
       <window_info anchor="bottom" id="Anonymous Apex" order="13" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="14" visible="true" weight="0.32905984" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -779,7 +812,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix Result http://localhost:8080/user/selectById?id=1" />
     <MESSAGE value="http://localhost:8080/user/queryUserList" />
-    <option name="LAST_COMMIT_MESSAGE" value="http://localhost:8080/user/queryUserList" />
+    <MESSAGE value="/user/queryUserList" />
+    <option name="LAST_COMMIT_MESSAGE" value="/user/queryUserList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -805,9 +839,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-test-start/src/test/java/com/xu/spring/test/dal/model/User.java" />
-    <entry file="file://$PROJECT_DIR$/spring-test-start/src/test/resources/mapping/ActivityMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/spring-test-start/src/test/java/com/xu/spring/test/dal/model/Activity.java" />
     <entry file="file://$PROJECT_DIR$/spring-test-start/src/test/java/com/xu/spring/test/dal/mapper/ActivityMapper.java" />
     <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/User.java" />
     <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityMapper.xml" />
@@ -914,13 +945,6 @@
     <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOExtMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -952,13 +976,6 @@
             <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -997,13 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-start/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="40" selection-start-line="5" selection-start-column="8" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1015,63 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-            <element signature="e#2073#2074#0" expanded="true" />
-            <element signature="e#2106#2107#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2200#2201#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,12 +1095,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2226">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-start/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+        <state relative-caret-position="134">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#2894#2895#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
+            <element signature="e#3021#3022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="116" column="67" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2038#2039#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1202,7 +1259,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-test</last-edited>
+          <last-edited>spring-test-start</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,5 +1,6 @@
 package com.xu.spring.test.service.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.util.Date;
@@ -113,7 +114,7 @@ public class UserDTO {
     public void setModifier(String modifier) {
         this.modifier = modifier;
     }
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     public Date getCreateDate() {
         return createDate;
     }
@@ -121,7 +122,7 @@ public class UserDTO {
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     public Date getModifyDate() {
         return modifyDate;
     }
