@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e856807c-eb9f-487a-ac0f-2e64ef1c6dc3" name="Default Changelist" comment="时间格式转换 2019-03-22T09:11:52.000+0000&#10; @JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;,timezone = &quot;GMT+8&quot;)">
-      <change afterPath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/ActivityQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityExtDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/ActivityDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/ActivityController.java" afterDir="false" />
+    <list default="true" id="e856807c-eb9f-487a-ac0f-2e64ef1c6dc3" name="Default Changelist" comment="fix">
+      <change afterPath="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/DelEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/UserActivityQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOExtMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/UserActivityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserActivityDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserActivityServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/ActivityDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/ActivityDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserActivityDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserActivityDOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/ActivityDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/ActivityDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityExtDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityDOExtMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,59 +38,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserActivityServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state relative-caret-position="26">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserActivityDO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserActivityDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOExtMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/ActivityController.java">
+        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/UserActivityQuery.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityDOMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -94,38 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/ActivityDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityExtDOMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="239">
-                <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="24">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -133,8 +106,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="100">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/ResultEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-250">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/DelEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding>
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="200">
+                <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOExtMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -158,10 +180,16 @@
       <find>queryUserList</find>
       <find>int</find>
       <find>foreach</find>
+      <find>BaseResultMap</find>
       <find>where_user_query</find>
       <find>Base_Column_List</find>
-      <find>BaseResultMap</find>
+      <find>queryUserActivityList</find>
+      <find>ActivityDTO</find>
+      <find>@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;,timezone = &quot;GMT+8&quot;)</find>
     </findStrings>
+    <replaceStrings>
+      <replace>where_base_query</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -185,7 +213,6 @@
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/spring-test-start/src/main/resources/generator/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/spring-test-start/src/test/resources/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserActivityDOMapper.java" />
         <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/query/UserQuery.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserDOMapper.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/BaseQuery.java" />
@@ -208,11 +235,19 @@
         <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/ActivityService.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/ActivityQuery.java" />
-        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java" />
         <option value="$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/ActivityController.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityExtDOMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserActivityDOMapper.java" />
+        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/UserActivityService.java" />
+        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserActivityDTO.java" />
+        <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/UserActivityQuery.java" />
+        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserActivityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOExtMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserActivityDO.java" />
         <option value="$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/ActivityDO.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/DelEnum.java" />
       </list>
     </option>
   </component>
@@ -270,6 +305,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -569,12 +605,56 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="method" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:5.2.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-5.2.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="method" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,8 +666,8 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\_projectGit\github\spring-test\spring-test-dal\src\main\resources\mapping" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.xu.spring.test.common.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\_projectGit\github\spring-test\spring-test-dal\src\main\resources\mapping" />
@@ -602,8 +682,8 @@
       <recent name="com.xu.spring.test.common.enums" />
       <recent name="com.xu.spring.test" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.xu.spring.test.common.util" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\_projectGit\github\spring-test\spring-test-dal\src\main\resources\mapping" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -712,14 +792,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577871829187</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="活动列表1">
+      <created>1577879086464</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577879086465</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix">
+      <created>1577879186191</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577879186191</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21275167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21543624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -729,16 +823,16 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.3293944" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8362416" weight="0.45790252" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7973154" visible="true" weight="0.44460857" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7959732" weight="0.44460857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.38109306" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.8966443" visible="true" weight="0.47562778" />
       <window_info anchor="bottom" id="Log Analyzer" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.15214181" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20268457" side_tool="true" visible="true" weight="0.44460857" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.103355706" side_tool="true" visible="true" weight="0.47562778" />
       <window_info anchor="bottom" id="SOQL Query" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49463087" weight="0.32791728" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49395972" weight="0.32791728" />
       <window_info anchor="bottom" id="Anonymous Apex" order="13" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="14" visible="true" weight="0.32905984" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -767,6 +861,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="LONG_EDGES_VISIBLE" value="true" />
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
@@ -803,12 +898,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mybatis generator" />
-    <MESSAGE value="fix" />
     <MESSAGE value="fix Result http://localhost:8080/user/selectById?id=1" />
     <MESSAGE value="http://localhost:8080/user/queryUserList" />
     <MESSAGE value="/user/queryUserList" />
     <MESSAGE value="时间格式转换 2019-03-22T09:11:52.000+0000&#10; @JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;,timezone = &quot;GMT+8&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="时间格式转换 2019-03-22T09:11:52.000+0000&#10; @JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;,timezone = &quot;GMT+8&quot;)" />
+    <MESSAGE value="活动列表1" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -825,6 +921,18 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -834,36 +942,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.10/lombok-1.18.10-sources.jar!/lombok/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserActivity.java" />
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/ActivityMapper.java" />
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/resources/generator/mybatis-generator.sh" />
-    <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/resources/generator/generatorConfig.xml" />
     <entry file="file://$PROJECT_DIR$/spring-test-start/src/test/resources/generator/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserActivityDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -938,24 +1020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/reflect/InvocationTargetException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.2.RELEASE/spring-web-5.2.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1033,57 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserActivityDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/UserQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/ActivityDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/ActivityDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1141,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="525">
+          <caret line="34" column="5" selection-start-line="30" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#995#996#0" expanded="true" />
@@ -1151,20 +1168,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/ActivityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        <state relative-caret-position="400">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityDOExtMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserDOExtMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="192">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="3" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/UserQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1175,53 +1227,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/ActivityExtDOMapper.xml">
+    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/ActivityDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="200">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/UserActivityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/ActivityDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/mapper/UserActivityDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.2.RELEASE/spring-web-5.2.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/resources/mapping/UserActivityDOExtMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/query/UserActivityQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/ActivityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="100">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-test-start/src/main/java/com/xu/spring/test/start/controller/ActivityController.java">
+    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/impl/UserActivityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="26">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-service/src/main/java/com/xu/spring/test/service/dto/UserActivityDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/UserActivityDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-test-dal/src/main/java/com/xu/spring/test/dal/model/ActivityDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="24">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="239">
-            <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <first_editor relative-caret-position="200">
+            <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-test-common/src/main/java/com/xu/spring/test/common/enums/DelEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,7 @@
 package com.xu.spring.test.dal.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -91,7 +93,7 @@ public class ActivityDO implements Serializable {
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     public Date getBeginTime() {
         return beginTime;
     }
@@ -99,7 +101,7 @@ public class ActivityDO implements Serializable {
     public void setBeginTime(Date beginTime) {
         this.beginTime = beginTime;
     }
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     public Date getEndTime() {
         return endTime;
     }
@@ -171,7 +173,7 @@ public class ActivityDO implements Serializable {
     public void setModifier(String modifier) {
         this.modifier = modifier == null ? null : modifier.trim();
     }
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     public Date getCreateDate() {
         return createDate;
     }
@@ -180,6 +182,7 @@ public class ActivityDO implements Serializable {
         this.createDate = createDate;
     }
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     public Date getModifyDate() {
         return modifyDate;
     }
