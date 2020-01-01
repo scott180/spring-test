@@ -15,6 +15,11 @@ public class Result<T> {
     private T content;
     private String errorMsg;
 
+    public Result() {
+        this.setCode(ResultEnum.SUCCESS.getCode());
+        this.setSuccess(true);
+    }
+
     public static Result success() {
         return success(null);
     }

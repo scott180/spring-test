@@ -1,4 +1,4 @@
-package com.xu.spring.test.common.query;
+package com.xu.spring.test.dal.query;
 
 import lombok.Data;
 
@@ -10,4 +10,6 @@ import lombok.Data;
 public class UserQuery extends BaseQuery {
     private String name;
     private String loginName;
+    private Integer age;
+    private Integer sex;
 }

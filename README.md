@@ -31,4 +31,8 @@ https://blog.csdn.net/iku5200/article/details/82856621
 https://www.imooc.com/article/28494?block_id=tuijian_wz
 
 mvn mybatis-generator:generate
-如果是在intellij 环境，直接鼠标点击 Maven-Plugins-mybatis-generator:generate
+如果是在intellij 环境，直接鼠标点击 Maven--Plugins--mybatis--generator:generate
+
+http://localhost:8080/user/selectById?id=1
+
+http://localhost:8080/user/queryUserList

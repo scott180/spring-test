@@ -1,8 +1,7 @@
 package com.xu.spring.test.start.controller;
 
 import com.xu.spring.test.common.Result;
-import com.xu.spring.test.common.query.UserQuery;
-import com.xu.spring.test.dal.model.UserDO;
+import com.xu.spring.test.dal.query.UserQuery;
 import com.xu.spring.test.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,8 +29,8 @@ public class UserController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "queryList",method = RequestMethod.POST)
-    public Result queryList(UserQuery query) {
-        return userService.queryList(query);
+    @RequestMapping(value = "queryUserList",method = RequestMethod.POST)
+    public Result queryUserList(UserQuery query) {
+        return userService.queryUserList(query);
     }
 }
