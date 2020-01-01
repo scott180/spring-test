@@ -209,20 +209,20 @@ public class ActivityDO implements Serializable {
         }
         ActivityDO other = (ActivityDO) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
-            && (this.getBeginTime() == null ? other.getBeginTime() == null : this.getBeginTime().equals(other.getBeginTime()))
-            && (this.getEndTime() == null ? other.getEndTime() == null : this.getEndTime().equals(other.getEndTime()))
-            && (this.getAddress() == null ? other.getAddress() == null : this.getAddress().equals(other.getAddress()))
-            && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
-            && (this.getHost() == null ? other.getHost() == null : this.getHost().equals(other.getHost()))
-            && (this.getLimitUser() == null ? other.getLimitUser() == null : this.getLimitUser().equals(other.getLimitUser()))
-            && (this.getDel() == null ? other.getDel() == null : this.getDel().equals(other.getDel()))
-            && (this.getCost() == null ? other.getCost() == null : this.getCost().equals(other.getCost()))
-            && (this.getCreator() == null ? other.getCreator() == null : this.getCreator().equals(other.getCreator()))
-            && (this.getModifier() == null ? other.getModifier() == null : this.getModifier().equals(other.getModifier()))
-            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
-            && (this.getModifyDate() == null ? other.getModifyDate() == null : this.getModifyDate().equals(other.getModifyDate()))
-            && (this.getContent() == null ? other.getContent() == null : this.getContent().equals(other.getContent()));
+                && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+                && (this.getBeginTime() == null ? other.getBeginTime() == null : this.getBeginTime().equals(other.getBeginTime()))
+                && (this.getEndTime() == null ? other.getEndTime() == null : this.getEndTime().equals(other.getEndTime()))
+                && (this.getAddress() == null ? other.getAddress() == null : this.getAddress().equals(other.getAddress()))
+                && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
+                && (this.getHost() == null ? other.getHost() == null : this.getHost().equals(other.getHost()))
+                && (this.getLimitUser() == null ? other.getLimitUser() == null : this.getLimitUser().equals(other.getLimitUser()))
+                && (this.getDel() == null ? other.getDel() == null : this.getDel().equals(other.getDel()))
+                && (this.getCost() == null ? other.getCost() == null : this.getCost().equals(other.getCost()))
+                && (this.getCreator() == null ? other.getCreator() == null : this.getCreator().equals(other.getCreator()))
+                && (this.getModifier() == null ? other.getModifier() == null : this.getModifier().equals(other.getModifier()))
+                && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
+                && (this.getModifyDate() == null ? other.getModifyDate() == null : this.getModifyDate().equals(other.getModifyDate()))
+                && (this.getContent() == null ? other.getContent() == null : this.getContent().equals(other.getContent()));
     }
 
     @Override
