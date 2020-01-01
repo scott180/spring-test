@@ -35,4 +35,21 @@ mvn mybatis-generator:generate
 
 http://localhost:8080/user/selectById?id=1
 
+用户列表
 http://localhost:8080/user/queryUserList
+
+活动列表
+http://localhost:8080/activity/queryActivityList
+
+活动详情
+活动内容text格式 保留html标签
+
+发布活动
+
+删除活动
+
+加入活动
+
+取消活动
+
+

@@ -55,6 +55,23 @@ public class ActivityDO implements Serializable {
         this.content = content;
     }
 
+    public ActivityDO(Long id, String name, Date beginTime, Date endTime, String address, String type, String host, Integer limitUser, Integer del, BigDecimal cost, String creator, String modifier, Date createDate, Date modifyDate) {
+        this.id = id;
+        this.name = name;
+        this.beginTime = beginTime;
+        this.endTime = endTime;
+        this.address = address;
+        this.type = type;
+        this.host = host;
+        this.limitUser = limitUser;
+        this.del = del;
+        this.cost = cost;
+        this.creator = creator;
+        this.modifier = modifier;
+        this.createDate = createDate;
+        this.modifyDate = modifyDate;
+    }
+
     public ActivityDO() {
         super();
     }
