@@ -3,12 +3,12 @@ package com.xu.spring.test.dal.model;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UserActivity implements Serializable {
+public class UserActivityDO implements Serializable {
     private Integer id;
 
-    private Long userid;
+    private Long userId;
 
-    private Long activityid;
+    private Long activityId;
 
     private Integer cancel;
 
@@ -16,24 +16,24 @@ public class UserActivity implements Serializable {
 
     private String modifier;
 
-    private Date createdate;
+    private Date createDate;
 
-    private Date modifydate;
+    private Date modifyDate;
 
     private static final long serialVersionUID = 1L;
 
-    public UserActivity(Integer id, Long userid, Long activityid, Integer cancel, String creator, String modifier, Date createdate, Date modifydate) {
+    public UserActivityDO(Integer id, Long userId, Long activityId, Integer cancel, String creator, String modifier, Date createDate, Date modifyDate) {
         this.id = id;
-        this.userid = userid;
-        this.activityid = activityid;
+        this.userId = userId;
+        this.activityId = activityId;
         this.cancel = cancel;
         this.creator = creator;
         this.modifier = modifier;
-        this.createdate = createdate;
-        this.modifydate = modifydate;
+        this.createDate = createDate;
+        this.modifyDate = modifyDate;
     }
 
-    public UserActivity() {
+    public UserActivityDO() {
         super();
     }
 
@@ -45,20 +45,20 @@ public class UserActivity implements Serializable {
         this.id = id;
     }
 
-    public Long getUserid() {
-        return userid;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setUserid(Long userid) {
-        this.userid = userid;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
-    public Long getActivityid() {
-        return activityid;
+    public Long getActivityId() {
+        return activityId;
     }
 
-    public void setActivityid(Long activityid) {
-        this.activityid = activityid;
+    public void setActivityId(Long activityId) {
+        this.activityId = activityId;
     }
 
     public Integer getCancel() {
@@ -85,20 +85,20 @@ public class UserActivity implements Serializable {
         this.modifier = modifier == null ? null : modifier.trim();
     }
 
-    public Date getCreatedate() {
-        return createdate;
+    public Date getCreateDate() {
+        return createDate;
     }
 
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
-    public Date getModifydate() {
-        return modifydate;
+    public Date getModifyDate() {
+        return modifyDate;
     }
 
-    public void setModifydate(Date modifydate) {
-        this.modifydate = modifydate;
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 
     @Override
@@ -112,15 +112,15 @@ public class UserActivity implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        UserActivity other = (UserActivity) that;
+        UserActivityDO other = (UserActivityDO) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getUserid() == null ? other.getUserid() == null : this.getUserid().equals(other.getUserid()))
-            && (this.getActivityid() == null ? other.getActivityid() == null : this.getActivityid().equals(other.getActivityid()))
+            && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
+            && (this.getActivityId() == null ? other.getActivityId() == null : this.getActivityId().equals(other.getActivityId()))
             && (this.getCancel() == null ? other.getCancel() == null : this.getCancel().equals(other.getCancel()))
             && (this.getCreator() == null ? other.getCreator() == null : this.getCreator().equals(other.getCreator()))
             && (this.getModifier() == null ? other.getModifier() == null : this.getModifier().equals(other.getModifier()))
-            && (this.getCreatedate() == null ? other.getCreatedate() == null : this.getCreatedate().equals(other.getCreatedate()))
-            && (this.getModifydate() == null ? other.getModifydate() == null : this.getModifydate().equals(other.getModifydate()));
+            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
+            && (this.getModifyDate() == null ? other.getModifyDate() == null : this.getModifyDate().equals(other.getModifyDate()));
     }
 
     @Override
@@ -128,13 +128,13 @@ public class UserActivity implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getUserid() == null) ? 0 : getUserid().hashCode());
-        result = prime * result + ((getActivityid() == null) ? 0 : getActivityid().hashCode());
+        result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
+        result = prime * result + ((getActivityId() == null) ? 0 : getActivityId().hashCode());
         result = prime * result + ((getCancel() == null) ? 0 : getCancel().hashCode());
         result = prime * result + ((getCreator() == null) ? 0 : getCreator().hashCode());
         result = prime * result + ((getModifier() == null) ? 0 : getModifier().hashCode());
-        result = prime * result + ((getCreatedate() == null) ? 0 : getCreatedate().hashCode());
-        result = prime * result + ((getModifydate() == null) ? 0 : getModifydate().hashCode());
+        result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
+        result = prime * result + ((getModifyDate() == null) ? 0 : getModifyDate().hashCode());
         return result;
     }
 
@@ -145,13 +145,13 @@ public class UserActivity implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", userid=").append(userid);
-        sb.append(", activityid=").append(activityid);
+        sb.append(", userId=").append(userId);
+        sb.append(", activityId=").append(activityId);
         sb.append(", cancel=").append(cancel);
         sb.append(", creator=").append(creator);
         sb.append(", modifier=").append(modifier);
-        sb.append(", createdate=").append(createdate);
-        sb.append(", modifydate=").append(modifydate);
+        sb.append(", createDate=").append(createDate);
+        sb.append(", modifyDate=").append(modifyDate);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

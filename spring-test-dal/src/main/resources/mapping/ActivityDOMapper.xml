@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xu.spring.test.dal.mapper.ActivityMapper" >
-  <resultMap id="BaseResultMap" type="com.xu.spring.test.dal.model.Activity" >
+<mapper namespace="com.xu.spring.test.dal.mapper.ActivityDOMapper" >
+  <resultMap id="BaseResultMap" type="com.xu.spring.test.dal.model.ActivityDO" >
     <constructor >
       <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -19,7 +19,7 @@
       <arg column="modifyDate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
     </constructor>
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="com.xu.spring.test.dal.model.Activity" >
+  <resultMap id="ResultMapWithBLOBs" type="com.xu.spring.test.dal.model.ActivityDO" >
     <constructor >
       <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -57,21 +57,21 @@
     delete from activity
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.xu.spring.test.dal.model.Activity" >
+  <insert id="insert" parameterType="com.xu.spring.test.dal.model.ActivityDO" >
     insert into activity (id, name, beginTime, 
       endTime, address, type, 
       host, limitUser, del, 
       cost, creator, modifier, 
       createDate, modifyDate, content
       )
-    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{begintime,jdbcType=TIMESTAMP}, 
-      #{endtime,jdbcType=TIMESTAMP}, #{address,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
-      #{host,jdbcType=VARCHAR}, #{limituser,jdbcType=INTEGER}, #{del,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{beginTime,jdbcType=TIMESTAMP}, 
+      #{endTime,jdbcType=TIMESTAMP}, #{address,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{host,jdbcType=VARCHAR}, #{limitUser,jdbcType=INTEGER}, #{del,jdbcType=INTEGER}, 
       #{cost,jdbcType=DECIMAL}, #{creator,jdbcType=VARCHAR}, #{modifier,jdbcType=VARCHAR}, 
-      #{createdate,jdbcType=TIMESTAMP}, #{modifydate,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}
+      #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.Activity" >
+  <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.ActivityDO" >
     insert into activity
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -80,10 +80,10 @@
       <if test="name != null" >
         name,
       </if>
-      <if test="begintime != null" >
+      <if test="beginTime != null" >
         beginTime,
       </if>
-      <if test="endtime != null" >
+      <if test="endTime != null" >
         endTime,
       </if>
       <if test="address != null" >
@@ -95,7 +95,7 @@
       <if test="host != null" >
         host,
       </if>
-      <if test="limituser != null" >
+      <if test="limitUser != null" >
         limitUser,
       </if>
       <if test="del != null" >
@@ -110,10 +110,10 @@
       <if test="modifier != null" >
         modifier,
       </if>
-      <if test="createdate != null" >
+      <if test="createDate != null" >
         createDate,
       </if>
-      <if test="modifydate != null" >
+      <if test="modifyDate != null" >
         modifyDate,
       </if>
       <if test="content != null" >
@@ -127,11 +127,11 @@
       <if test="name != null" >
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="begintime != null" >
-        #{begintime,jdbcType=TIMESTAMP},
+      <if test="beginTime != null" >
+        #{beginTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="endtime != null" >
-        #{endtime,jdbcType=TIMESTAMP},
+      <if test="endTime != null" >
+        #{endTime,jdbcType=TIMESTAMP},
       </if>
       <if test="address != null" >
         #{address,jdbcType=VARCHAR},
@@ -142,8 +142,8 @@
       <if test="host != null" >
         #{host,jdbcType=VARCHAR},
       </if>
-      <if test="limituser != null" >
-        #{limituser,jdbcType=INTEGER},
+      <if test="limitUser != null" >
+        #{limitUser,jdbcType=INTEGER},
       </if>
       <if test="del != null" >
         #{del,jdbcType=INTEGER},
@@ -157,28 +157,28 @@
       <if test="modifier != null" >
         #{modifier,jdbcType=VARCHAR},
       </if>
-      <if test="createdate != null" >
-        #{createdate,jdbcType=TIMESTAMP},
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifydate != null" >
-        #{modifydate,jdbcType=TIMESTAMP},
+      <if test="modifyDate != null" >
+        #{modifyDate,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null" >
         #{content,jdbcType=LONGVARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.xu.spring.test.dal.model.Activity" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.xu.spring.test.dal.model.ActivityDO" >
     update activity
     <set >
       <if test="name != null" >
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="begintime != null" >
-        beginTime = #{begintime,jdbcType=TIMESTAMP},
+      <if test="beginTime != null" >
+        beginTime = #{beginTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="endtime != null" >
-        endTime = #{endtime,jdbcType=TIMESTAMP},
+      <if test="endTime != null" >
+        endTime = #{endTime,jdbcType=TIMESTAMP},
       </if>
       <if test="address != null" >
         address = #{address,jdbcType=VARCHAR},
@@ -189,8 +189,8 @@
       <if test="host != null" >
         host = #{host,jdbcType=VARCHAR},
       </if>
-      <if test="limituser != null" >
-        limitUser = #{limituser,jdbcType=INTEGER},
+      <if test="limitUser != null" >
+        limitUser = #{limitUser,jdbcType=INTEGER},
       </if>
       <if test="del != null" >
         del = #{del,jdbcType=INTEGER},
@@ -204,11 +204,11 @@
       <if test="modifier != null" >
         modifier = #{modifier,jdbcType=VARCHAR},
       </if>
-      <if test="createdate != null" >
-        createDate = #{createdate,jdbcType=TIMESTAMP},
+      <if test="createDate != null" >
+        createDate = #{createDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifydate != null" >
-        modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      <if test="modifyDate != null" >
+        modifyDate = #{modifyDate,jdbcType=TIMESTAMP},
       </if>
       <if test="content != null" >
         content = #{content,jdbcType=LONGVARCHAR},
@@ -216,39 +216,39 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.xu.spring.test.dal.model.Activity" >
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.xu.spring.test.dal.model.ActivityDO" >
     update activity
     set name = #{name,jdbcType=VARCHAR},
-      beginTime = #{begintime,jdbcType=TIMESTAMP},
-      endTime = #{endtime,jdbcType=TIMESTAMP},
+      beginTime = #{beginTime,jdbcType=TIMESTAMP},
+      endTime = #{endTime,jdbcType=TIMESTAMP},
       address = #{address,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR},
       host = #{host,jdbcType=VARCHAR},
-      limitUser = #{limituser,jdbcType=INTEGER},
+      limitUser = #{limitUser,jdbcType=INTEGER},
       del = #{del,jdbcType=INTEGER},
       cost = #{cost,jdbcType=DECIMAL},
       creator = #{creator,jdbcType=VARCHAR},
       modifier = #{modifier,jdbcType=VARCHAR},
-      createDate = #{createdate,jdbcType=TIMESTAMP},
-      modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      createDate = #{createDate,jdbcType=TIMESTAMP},
+      modifyDate = #{modifyDate,jdbcType=TIMESTAMP},
       content = #{content,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xu.spring.test.dal.model.Activity" >
+  <update id="updateByPrimaryKey" parameterType="com.xu.spring.test.dal.model.ActivityDO" >
     update activity
     set name = #{name,jdbcType=VARCHAR},
-      beginTime = #{begintime,jdbcType=TIMESTAMP},
-      endTime = #{endtime,jdbcType=TIMESTAMP},
+      beginTime = #{beginTime,jdbcType=TIMESTAMP},
+      endTime = #{endTime,jdbcType=TIMESTAMP},
       address = #{address,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR},
       host = #{host,jdbcType=VARCHAR},
-      limitUser = #{limituser,jdbcType=INTEGER},
+      limitUser = #{limitUser,jdbcType=INTEGER},
       del = #{del,jdbcType=INTEGER},
       cost = #{cost,jdbcType=DECIMAL},
       creator = #{creator,jdbcType=VARCHAR},
       modifier = #{modifier,jdbcType=VARCHAR},
-      createDate = #{createdate,jdbcType=TIMESTAMP},
-      modifyDate = #{modifydate,jdbcType=TIMESTAMP}
+      createDate = #{createDate,jdbcType=TIMESTAMP},
+      modifyDate = #{modifyDate,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

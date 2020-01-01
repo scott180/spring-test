@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xu.spring.test.dal.mapper.UserActivityMapper" >
-  <resultMap id="BaseResultMap" type="com.xu.spring.test.dal.model.UserActivity" >
+<mapper namespace="com.xu.spring.test.dal.mapper.UserActivityDOMapper" >
+  <resultMap id="BaseResultMap" type="com.xu.spring.test.dal.model.UserActivityDO" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="userId" jdbcType="BIGINT" javaType="java.lang.Long" />
@@ -26,24 +26,24 @@
     delete from userActivity
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.xu.spring.test.dal.model.UserActivity" >
+  <insert id="insert" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     insert into userActivity (id, userId, activityId, 
       cancel, creator, modifier, 
       createDate, modifyDate)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=BIGINT}, #{activityid,jdbcType=BIGINT}, 
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=BIGINT}, #{activityId,jdbcType=BIGINT}, 
       #{cancel,jdbcType=INTEGER}, #{creator,jdbcType=VARCHAR}, #{modifier,jdbcType=VARCHAR}, 
-      #{createdate,jdbcType=TIMESTAMP}, #{modifydate,jdbcType=TIMESTAMP})
+      #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.UserActivity" >
+  <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     insert into userActivity
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
       </if>
-      <if test="userid != null" >
+      <if test="userId != null" >
         userId,
       </if>
-      <if test="activityid != null" >
+      <if test="activityId != null" >
         activityId,
       </if>
       <if test="cancel != null" >
@@ -55,10 +55,10 @@
       <if test="modifier != null" >
         modifier,
       </if>
-      <if test="createdate != null" >
+      <if test="createDate != null" >
         createDate,
       </if>
-      <if test="modifydate != null" >
+      <if test="modifyDate != null" >
         modifyDate,
       </if>
     </trim>
@@ -66,11 +66,11 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="userid != null" >
-        #{userid,jdbcType=BIGINT},
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
       </if>
-      <if test="activityid != null" >
-        #{activityid,jdbcType=BIGINT},
+      <if test="activityId != null" >
+        #{activityId,jdbcType=BIGINT},
       </if>
       <if test="cancel != null" >
         #{cancel,jdbcType=INTEGER},
@@ -81,22 +81,22 @@
       <if test="modifier != null" >
         #{modifier,jdbcType=VARCHAR},
       </if>
-      <if test="createdate != null" >
-        #{createdate,jdbcType=TIMESTAMP},
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifydate != null" >
-        #{modifydate,jdbcType=TIMESTAMP},
+      <if test="modifyDate != null" >
+        #{modifyDate,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.xu.spring.test.dal.model.UserActivity" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     update userActivity
     <set >
-      <if test="userid != null" >
-        userId = #{userid,jdbcType=BIGINT},
+      <if test="userId != null" >
+        userId = #{userId,jdbcType=BIGINT},
       </if>
-      <if test="activityid != null" >
-        activityId = #{activityid,jdbcType=BIGINT},
+      <if test="activityId != null" >
+        activityId = #{activityId,jdbcType=BIGINT},
       </if>
       <if test="cancel != null" >
         cancel = #{cancel,jdbcType=INTEGER},
@@ -107,24 +107,24 @@
       <if test="modifier != null" >
         modifier = #{modifier,jdbcType=VARCHAR},
       </if>
-      <if test="createdate != null" >
-        createDate = #{createdate,jdbcType=TIMESTAMP},
+      <if test="createDate != null" >
+        createDate = #{createDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifydate != null" >
-        modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      <if test="modifyDate != null" >
+        modifyDate = #{modifyDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xu.spring.test.dal.model.UserActivity" >
+  <update id="updateByPrimaryKey" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     update userActivity
-    set userId = #{userid,jdbcType=BIGINT},
-      activityId = #{activityid,jdbcType=BIGINT},
+    set userId = #{userId,jdbcType=BIGINT},
+      activityId = #{activityId,jdbcType=BIGINT},
       cancel = #{cancel,jdbcType=INTEGER},
       creator = #{creator,jdbcType=VARCHAR},
       modifier = #{modifier,jdbcType=VARCHAR},
-      createDate = #{createdate,jdbcType=TIMESTAMP},
-      modifyDate = #{modifydate,jdbcType=TIMESTAMP}
+      createDate = #{createDate,jdbcType=TIMESTAMP},
+      modifyDate = #{modifyDate,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>
