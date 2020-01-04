@@ -37,4 +37,10 @@ public class ActivityController {
     public Result publishActivity(ActivityPublishParams params) {
         return activityService.publishActivity(params);
     }
+
+    @ResponseBody
+    @RequestMapping(value = "deleteActivity", method = RequestMethod.GET)
+    public Result deleteActivity(Long id) {
+        return activityService.deleteActivity(id);
+    }
 }

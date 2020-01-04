@@ -128,4 +128,18 @@ public class ActivityServiceImpl implements ActivityService {
         return result;
     }
 
+    @Override
+    public Result deleteActivity(Long id) {
+        if (id == null) {
+            return Result.error(ResultEnum.ID_IS_NULL);
+        }
+        Result result = new Result();
+        ActivityDO activityDO = activityDOMapper.selectByPrimaryKey(id);
+        if (activityDO == null) {
+            return Result.error(ResultEnum.RECORD_NOT_EXIST);
+        }
+        activityDO.setDel(DelEnum.DELETED.getCode());
+        activityDOMapper.updateByPrimaryKey(activityDO);
+        return result;
+    }
 }

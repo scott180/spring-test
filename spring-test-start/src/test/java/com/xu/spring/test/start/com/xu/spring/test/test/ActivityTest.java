@@ -31,8 +31,8 @@ public class ActivityTest {
     @Test
     public void testQueryActivityList() {
         ActivityQuery query = new ActivityQuery();
-        query.setBeginTime("2020-01-04 10:00:00");
-        query.setName("周日");
+        //query.setBeginTime("2020-01-04 10:00:00");
+        //query.setName("周日");
         Result result = activityController.queryActivityList(query);
         logger.info("result: " + JSON.toJSONString(result));
     }
@@ -79,6 +79,12 @@ public class ActivityTest {
         publishParams.setEndTime("2020-01-04 14:00:00");
         publishParams.setContent(content);
         Result result = activityController.publishActivity(publishParams);
+        logger.info("result: " + JSON.toJSONString(result));
+    }
+
+    @Test
+    public void testDeleteActivity() {
+        Result result = activityController.deleteActivity(7L);
         logger.info("result: " + JSON.toJSONString(result));
     }
 }

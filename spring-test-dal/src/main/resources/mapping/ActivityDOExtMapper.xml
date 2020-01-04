@@ -14,8 +14,8 @@
         <if test="creator != null">
             and creator = #{creator}
         </if>
-        <if test="del != del">
-            and age = #{age}
+        <if test="del != null">
+            and del = #{del}
         </if>
         <if test="idList!=null and idList.size()>0">
             and id in

@@ -11,4 +11,6 @@ public interface ActivityService {
     Result queryActivityDetail(Long id);
 
     Result publishActivity(ActivityPublishParams params);
+
+    Result deleteActivity(Long id);
 }
