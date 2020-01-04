@@ -4,6 +4,7 @@ import com.xu.spring.test.common.Result;
 import com.xu.spring.test.dal.params.ActivityPublishParams;
 import com.xu.spring.test.dal.query.ActivityQuery;
 import com.xu.spring.test.service.ActivityService;
+import com.xu.spring.test.service.UserActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,6 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ActivityController {
     @Autowired
     private ActivityService activityService;
+
+    @Autowired
+    private UserActivityService userActivityService;
 
     @ResponseBody
     @RequestMapping(value = "queryActivityList", method = RequestMethod.POST)
@@ -42,5 +46,17 @@ public class ActivityController {
     @RequestMapping(value = "deleteActivity", method = RequestMethod.GET)
     public Result deleteActivity(Long id) {
         return activityService.deleteActivity(id);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "joinActivity", method = RequestMethod.GET)
+    public Result joinActivity(Long userId, Long activityId) {
+        return userActivityService.joinActivity(userId, activityId);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "cancelActivity", method = RequestMethod.GET)
+    public Result cancelActivity(Long userId, Long activityId) {
+        return userActivityService.cancelActivity(userId, activityId);
     }
 }

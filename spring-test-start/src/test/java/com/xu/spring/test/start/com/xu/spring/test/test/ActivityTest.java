@@ -87,4 +87,20 @@ public class ActivityTest {
         Result result = activityController.deleteActivity(7L);
         logger.info("result: " + JSON.toJSONString(result));
     }
+
+    @Test
+    public void testJoinActivity() {
+        Long userId = 1L;
+        Long activityId = 1L;
+        Result result = activityController.joinActivity(userId,activityId);
+        logger.info("result: " + JSON.toJSONString(result));
+    }
+
+    @Test
+    public void testCancelActivity() {
+        Long userId = 1L;
+        Long activityId = 1L;
+        Result result = activityController.cancelActivity(userId,activityId);
+        logger.info("result: " + JSON.toJSONString(result));
+    }
 }

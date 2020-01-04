@@ -9,4 +9,8 @@ import com.xu.spring.test.dal.query.UserActivityQuery;
  */
 public interface UserActivityService {
     Result queryUserActivityList(UserActivityQuery query);
+
+    Result joinActivity(Long userId, Long activityId);
+
+    Result cancelActivity(Long userId, Long activityId);
 }

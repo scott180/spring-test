@@ -44,6 +44,14 @@ public class Result<T> {
         return result;
     }
 
+    public static Result error(String errorMsg) {
+        Result result = new Result();
+        result.setSuccess(false);
+        result.setCode(ResultEnum.FAIL.getCode());
+        result.setErrorMsg(errorMsg);
+        return result;
+    }
+
     public void error(int failCode, String errorMsg) {
         this.setCode(failCode);
         this.setErrorMsg(errorMsg);

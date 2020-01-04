@@ -49,9 +49,12 @@ activity/queryActivityDetail
 activity/publishActivity
 
 删除活动
+activity/deleteActivity
 
 加入活动
+activity/joinActivity
 
 取消活动
+activity/cancelActivity
 
 
