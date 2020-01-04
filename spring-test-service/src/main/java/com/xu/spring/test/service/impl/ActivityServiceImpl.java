@@ -9,20 +9,28 @@ import com.xu.spring.test.dal.mapper.ActivityDOMapper;
 import com.xu.spring.test.dal.mapper.UserActivityDOMapper;
 import com.xu.spring.test.dal.model.ActivityDO;
 import com.xu.spring.test.dal.model.UserActivityDO;
+import com.xu.spring.test.dal.params.ActivityPublishParams;
 import com.xu.spring.test.dal.query.ActivityQuery;
 import com.xu.spring.test.dal.query.UserActivityQuery;
 import com.xu.spring.test.service.ActivityService;
 import com.xu.spring.test.service.dto.ActivityDTO;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import org.springframework.web.util.HtmlUtils;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class ActivityServiceImpl implements ActivityService {
 
+    private static final SimpleDateFormat SIMPLE_DATE_FORMATFORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     @Autowired
     ActivityDOMapper activityDOMapper;
 
@@ -70,4 +78,54 @@ public class ActivityServiceImpl implements ActivityService {
         result.setContent(activityDO);
         return result;
     }
+
+    @Override
+    public Result publishActivity(ActivityPublishParams params) {
+        Result result = checkActivityParams(params);
+        if (!result.isSuccess()) {
+            return result;
+        }
+        ActivityDO activityDO = new ActivityDO();
+        BeanUtils.copyProperties(params, activityDO);
+        activityDO.setBeginTime(assembleTime(params.getBeginTime()));
+        activityDO.setEndTime(assembleTime(params.getEndTime()));
+        activityDO.setCreateDate(new Date());
+        activityDO.setModifyDate(new Date());
+        activityDO.setDel(DelEnum.NOT_DEL.getCode());
+        activityDO.setContent(StringUtils.isEmpty(params.getContent()) ? "" : HtmlUtils.htmlEscape(params.getContent()));
+        activityDOMapper.insert(activityDO);
+        return result;
+    }
+
+    private Date assembleTime(String time) {
+        if (!StringUtils.isEmpty(time)) {
+            try {
+                return SIMPLE_DATE_FORMATFORMAT.parse(time);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+        }
+        return null;
+    }
+
+    private Result checkActivityParams(ActivityPublishParams params) {
+        Result result = new Result();
+        if (params == null) {
+            result.setErrorMsg("参数不能为空");
+        } else if (StringUtils.isEmpty(params.getName())) {
+            result.setErrorMsg("活动名称不能为空");
+        } else if (StringUtils.isEmpty(params.getAddress())) {
+            result.setErrorMsg("活动地址不能为空");
+        } else if (StringUtils.isEmpty(params.getBeginTime())) {
+            result.setErrorMsg("开始时间不能为空");
+        } else if (StringUtils.isEmpty(params.getEndTime())) {
+            result.setErrorMsg("结束时间不能为空");
+        }
+        boolean flag = StringUtils.isEmpty(result.getErrorMsg());
+        result.setSuccess(flag);
+        result.setCode(flag ? ResultEnum.SUCCESS.getCode() : ResultEnum.FAIL.getCode());
+        return result;
+    }
+
 }

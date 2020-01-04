@@ -8,6 +8,7 @@ package com.xu.spring.test.start.com.xu.spring.test.test;
 import com.alibaba.fastjson.JSON;
 import com.xu.spring.test.Application;
 import com.xu.spring.test.common.Result;
+import com.xu.spring.test.dal.params.ActivityPublishParams;
 import com.xu.spring.test.dal.query.ActivityQuery;
 import com.xu.spring.test.start.controller.ActivityController;
 import org.junit.Test;
@@ -38,7 +39,46 @@ public class ActivityTest {
 
     @Test
     public void testQueryActivityDetail() {
-        Result result = activityController.queryActivityDetail(1L);
+        Result result = activityController.queryActivityDetail(7L);
+        logger.info("result: " + JSON.toJSONString(result));
+    }
+
+    private String content = "<!DOCTYPE html>\n" +
+            "<html>\n" +
+            "<head>\n" +
+            "<style>\n" +
+            ".cities {\n" +
+            "    background-color:black;\n" +
+            "    color:white;\n" +
+            "    margin:20px;\n" +
+            "    padding:20px;\n" +
+            "} \n" +
+            "</style>\n" +
+            "</head>\n" +
+            "\n" +
+            "<body>\n" +
+            "\n" +
+            "<div class=\"cities\">\n" +
+            "<h2>London</h2>\n" +
+            "<p>\n" +
+            "活动介绍 活动主题  London is the capital city of England. \n" +
+            "It is the most populous city in the United Kingdom, \n" +
+            "with a metropolitan area of over 13 million inhabitants.\n" +
+            "</p>\n" +
+            "</div> \n" +
+            "\n" +
+            "</body>\n" +
+            "</html>\n";
+
+    @Test
+    public void testPublishActivity() {
+        ActivityPublishParams publishParams = new ActivityPublishParams();
+        publishParams.setName("武功山之旅");
+        publishParams.setAddress("武功山");
+        publishParams.setBeginTime("2020-01-04 09:00:00");
+        publishParams.setEndTime("2020-01-04 14:00:00");
+        publishParams.setContent(content);
+        Result result = activityController.publishActivity(publishParams);
         logger.info("result: " + JSON.toJSONString(result));
     }
 }

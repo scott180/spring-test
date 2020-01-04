@@ -43,8 +43,10 @@ http://localhost:8080/activity/queryActivityList
 
 活动详情
 活动内容text格式 保留html标签
+activity/queryActivityDetail
 
 发布活动
+activity/publishActivity
 
 删除活动
 

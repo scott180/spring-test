@@ -1,6 +1,7 @@
 package com.xu.spring.test.start.controller;
 
 import com.xu.spring.test.common.Result;
+import com.xu.spring.test.dal.params.ActivityPublishParams;
 import com.xu.spring.test.dal.query.ActivityQuery;
 import com.xu.spring.test.service.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +30,11 @@ public class ActivityController {
     @RequestMapping(value = "queryActivityDetail", method = RequestMethod.GET)
     public Result queryActivityDetail(Long id) {
         return activityService.queryActivityDetail(id);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "publishActivity", method = RequestMethod.POST)
+    public Result publishActivity(ActivityPublishParams params) {
+        return activityService.publishActivity(params);
     }
 }

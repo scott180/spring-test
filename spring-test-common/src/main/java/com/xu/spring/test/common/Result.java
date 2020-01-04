@@ -16,8 +16,11 @@ public class Result<T> {
     private String errorMsg;
 
     public Result() {
-        this.setCode(ResultEnum.SUCCESS.getCode());
-        this.setSuccess(true);
+    }
+
+    public Result(Boolean success) {
+        this.setCode(success ? ResultEnum.SUCCESS.getCode() : ResultEnum.FAIL.getCode());
+        this.setSuccess(success);
     }
 
     public static Result success() {
