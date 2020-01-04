@@ -3,6 +3,7 @@ package com.xu.spring.test.service.impl;
 import com.xu.spring.test.common.Page;
 import com.xu.spring.test.common.Result;
 import com.xu.spring.test.common.enums.DelEnum;
+import com.xu.spring.test.common.enums.ResultEnum;
 import com.xu.spring.test.common.util.CopyUtil;
 import com.xu.spring.test.dal.mapper.ActivityDOMapper;
 import com.xu.spring.test.dal.mapper.UserActivityDOMapper;
@@ -14,9 +15,8 @@ import com.xu.spring.test.service.ActivityService;
 import com.xu.spring.test.service.dto.ActivityDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
+import org.springframework.web.util.HtmlUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -54,5 +54,20 @@ public class ActivityServiceImpl implements ActivityService {
         query.setUserId(userId);
         List<UserActivityDO> list = userActivityDOMapper.queryUserActivityList(query);
         return list.stream().map(UserActivityDO::getActivityId).distinct().collect(Collectors.toList());
+    }
+
+    @Override
+    public Result queryActivityDetail(Long id) {
+        if (id == null) {
+            return Result.error(ResultEnum.ID_IS_NULL);
+        }
+        Result result = new Result();
+        ActivityDO activityDO = activityDOMapper.selectByPrimaryKey(id);
+        if (activityDO == null) {
+            return Result.error(ResultEnum.RECORD_NOT_EXIST);
+        }
+        activityDO.setContent(HtmlUtils.htmlUnescape(activityDO.getContent()));
+        result.setContent(activityDO);
+        return result;
     }
 }

@@ -7,4 +7,5 @@ public interface ActivityService {
 
     Result queryActivityList(ActivityQuery query);
 
+    Result queryActivityDetail(Long id);
 }

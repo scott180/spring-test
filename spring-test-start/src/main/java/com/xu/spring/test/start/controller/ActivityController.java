@@ -24,4 +24,10 @@ public class ActivityController {
     public Result queryActivityList(ActivityQuery query) {
         return activityService.queryActivityList(query);
     }
+
+    @ResponseBody
+    @RequestMapping(value = "queryActivityDetail", method = RequestMethod.GET)
+    public Result queryActivityDetail(Long id) {
+        return activityService.queryActivityDetail(id);
+    }
 }

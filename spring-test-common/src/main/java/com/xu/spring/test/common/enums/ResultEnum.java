@@ -21,6 +21,10 @@ public enum ResultEnum {
      */
     NOT_FOUND(404, "not_found", "页面找不到"),
 
+    ID_IS_NULL(501, "id_is_null", "id不能为空"),
+
+    RECORD_NOT_EXIST(502, "record_not_exist", "记录不存在"),
+
     ;
     private int code;
 

@@ -32,11 +32,13 @@ public class Result<T> {
         return result;
     }
 
-    public void error(ResultEnum resultEnum) {
-        this.setSuccess(false);
+    public static Result error(ResultEnum resultEnum) {
+        Result result = new Result();
+        result.setSuccess(false);
         resultEnum = resultEnum == null ? ResultEnum.FAIL : resultEnum;
-        this.setCode(resultEnum.getCode());
-        this.setErrorMsg(resultEnum.getCh());
+        result.setCode(resultEnum.getCode());
+        result.setErrorMsg(resultEnum.getCh());
+        return result;
     }
 
     public void error(int failCode, String errorMsg) {

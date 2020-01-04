@@ -28,11 +28,17 @@ public class ActivityTest {
     private ActivityController activityController;
 
     @Test
-    public void test1() {
+    public void testQueryActivityList() {
         ActivityQuery query = new ActivityQuery();
         query.setBeginTime("2020-01-04 10:00:00");
         query.setName("周日");
         Result result = activityController.queryActivityList(query);
+        logger.info("result: " + JSON.toJSONString(result));
+    }
+
+    @Test
+    public void testQueryActivityDetail() {
+        Result result = activityController.queryActivityDetail(1L);
         logger.info("result: " + JSON.toJSONString(result));
     }
 }
