@@ -10,12 +10,4 @@ import lombok.Data;
 @Data
 public class UserActivityDTO extends UserActivityDO {
     private String cancelText;
-
-    public String getCancelText() {
-        return cancelText;
-    }
-
-    public void setCancelText(String cancelText) {
-        this.cancelText = cancelText;
-    }
 }

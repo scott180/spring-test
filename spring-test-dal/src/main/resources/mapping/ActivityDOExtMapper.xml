@@ -8,6 +8,9 @@
         <if test="endTime != null">
             and endTime &lt;= #{endTim}
         </if>
+        <if test="name != null">
+            and name like CONCAT('%',CONCAT(#{name},'%'))
+        </if>
         <if test="creator != null">
             and creator = #{creator}
         </if>

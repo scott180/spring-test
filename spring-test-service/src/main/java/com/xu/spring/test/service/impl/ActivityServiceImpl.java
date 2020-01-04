@@ -31,26 +31,23 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public Result queryActivityList(ActivityQuery query) {
-        List<Long> activityIdList = new ArrayList<>();
-        if (query.getUserId() != null) {
-            activityIdList = getJoinActivityIdList(query.getUserId());
-        }
         Result result = new Result();
-        if (!CollectionUtils.isEmpty(activityIdList)) {
-            query.setIdList(activityIdList);
-            query.setDel(DelEnum.NOT_DEL.getCode());
-            Long count = activityDOMapper.queryActivityListCount(query);
-            if (count > 0) {
-                List<ActivityDO> list = activityDOMapper.queryActivityList(query);
-                List<ActivityDTO> dtoList = CopyUtil.copyPropertiesList(list, ActivityDTO.class);
-                Page page = new Page(query.getCurrentPage(), count, dtoList);
-                result.setContent(page);
-            }
+        query.setIdList(getJoinActivityIdList(query.getUserId()));
+        query.setDel(DelEnum.NOT_DEL.getCode());
+        Long count = activityDOMapper.queryActivityListCount(query);
+        if (count > 0) {
+            List<ActivityDO> list = activityDOMapper.queryActivityList(query);
+            List<ActivityDTO> dtoList = CopyUtil.copyPropertiesList(list, ActivityDTO.class);
+            Page page = new Page(query.getCurrentPage(), count, dtoList);
+            result.setContent(page);
         }
         return result;
     }
 
     private List<Long> getJoinActivityIdList(Long userId) {
+        if (userId == null) {
+            return null;
+        }
         UserActivityQuery query = new UserActivityQuery();
         query.setPageSize(Long.MAX_VALUE);
         query.setCancel(DelEnum.NOT_DEL.getCode());
