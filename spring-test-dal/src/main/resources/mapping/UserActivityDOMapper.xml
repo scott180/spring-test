@@ -3,7 +3,7 @@
 <mapper namespace="com.xu.spring.test.dal.mapper.UserActivityDOMapper" >
   <resultMap id="BaseResultMap" type="com.xu.spring.test.dal.model.UserActivityDO" >
     <constructor >
-      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="userId" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="activityId" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="cancel" jdbcType="INTEGER" javaType="java.lang.Integer" />
@@ -16,23 +16,23 @@
   <sql id="Base_Column_List" >
     id, userId, activityId, cancel, creator, modifier, createDate, modifyDate
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select
     <include refid="Base_Column_List" />
     from userActivity
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from userActivity
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
-    insert into userActivity (id, userId, activityId, 
-      cancel, creator, modifier, 
-      createDate, modifyDate)
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=BIGINT}, #{activityId,jdbcType=BIGINT}, 
-      #{cancel,jdbcType=INTEGER}, #{creator,jdbcType=VARCHAR}, #{modifier,jdbcType=VARCHAR}, 
-      #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP})
+    insert into userActivity (id, userId, activityId,
+    cancel, creator, modifier,
+    createDate, modifyDate)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{activityId,jdbcType=BIGINT},
+    #{cancel,jdbcType=INTEGER}, #{creator,jdbcType=VARCHAR}, #{modifier,jdbcType=VARCHAR},
+    #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     insert into userActivity
@@ -64,7 +64,7 @@
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
-        #{id,jdbcType=INTEGER},
+        #{id,jdbcType=BIGINT},
       </if>
       <if test="userId != null" >
         #{userId,jdbcType=BIGINT},
@@ -114,17 +114,17 @@
         modifyDate = #{modifyDate,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     update userActivity
     set userId = #{userId,jdbcType=BIGINT},
-      activityId = #{activityId,jdbcType=BIGINT},
-      cancel = #{cancel,jdbcType=INTEGER},
-      creator = #{creator,jdbcType=VARCHAR},
-      modifier = #{modifier,jdbcType=VARCHAR},
-      createDate = #{createDate,jdbcType=TIMESTAMP},
-      modifyDate = #{modifyDate,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
+    activityId = #{activityId,jdbcType=BIGINT},
+    cancel = #{cancel,jdbcType=INTEGER},
+    creator = #{creator,jdbcType=VARCHAR},
+    modifier = #{modifier,jdbcType=VARCHAR},
+    createDate = #{createDate,jdbcType=TIMESTAMP},
+    modifyDate = #{modifyDate,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

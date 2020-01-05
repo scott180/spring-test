@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class UserActivityDO implements Serializable {
-    private Integer id;
+    private Long id;
 
     private Long userId;
 
@@ -22,7 +22,7 @@ public class UserActivityDO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public UserActivityDO(Integer id, Long userId, Long activityId, Integer cancel, String creator, String modifier, Date createDate, Date modifyDate) {
+    public UserActivityDO(Long id, Long userId, Long activityId, Integer cancel, String creator, String modifier, Date createDate, Date modifyDate) {
         this.id = id;
         this.userId = userId;
         this.activityId = activityId;
@@ -37,11 +37,11 @@ public class UserActivityDO implements Serializable {
         super();
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -114,13 +114,13 @@ public class UserActivityDO implements Serializable {
         }
         UserActivityDO other = (UserActivityDO) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getActivityId() == null ? other.getActivityId() == null : this.getActivityId().equals(other.getActivityId()))
-            && (this.getCancel() == null ? other.getCancel() == null : this.getCancel().equals(other.getCancel()))
-            && (this.getCreator() == null ? other.getCreator() == null : this.getCreator().equals(other.getCreator()))
-            && (this.getModifier() == null ? other.getModifier() == null : this.getModifier().equals(other.getModifier()))
-            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
-            && (this.getModifyDate() == null ? other.getModifyDate() == null : this.getModifyDate().equals(other.getModifyDate()));
+                && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
+                && (this.getActivityId() == null ? other.getActivityId() == null : this.getActivityId().equals(other.getActivityId()))
+                && (this.getCancel() == null ? other.getCancel() == null : this.getCancel().equals(other.getCancel()))
+                && (this.getCreator() == null ? other.getCreator() == null : this.getCreator().equals(other.getCreator()))
+                && (this.getModifier() == null ? other.getModifier() == null : this.getModifier().equals(other.getModifier()))
+                && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
+                && (this.getModifyDate() == null ? other.getModifyDate() == null : this.getModifyDate().equals(other.getModifyDate()));
     }
 
     @Override
