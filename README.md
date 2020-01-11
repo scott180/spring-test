@@ -62,3 +62,13 @@ https://blog.csdn.net/qq_38637066/article/details/82791228
 https://msd.misuland.com/pd/2884250171976189972
 
 
+>aop配置
+https://www.cnblogs.com/moris5013/p/11026653.html
+
+>log配置
+https://www.cnblogs.com/bigdataZJ/p/springboot-log.html
+
+>浏览器 http请求插件
+RESTED
+
+

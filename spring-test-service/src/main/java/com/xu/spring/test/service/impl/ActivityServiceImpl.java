@@ -132,7 +132,7 @@ public class ActivityServiceImpl implements ActivityService {
         if (id == null) {
             return Result.error(ResultEnum.ID_IS_NULL);
         }
-        Result result = new Result();
+        Result result = new Result(Boolean.TRUE);
         ActivityDO activityDO = activityDOMapper.selectByPrimaryKey(id);
         if (activityDO == null) {
             return Result.error(ResultEnum.RECORD_NOT_EXIST);
@@ -143,7 +143,7 @@ public class ActivityServiceImpl implements ActivityService {
         UserActivityQuery userActivityQuery = new UserActivityQuery();
         userActivityQuery.setActivityId(id);
         List<UserActivityDO> userActivityDOList = userActivityDOMapper.queryUserActivityList(userActivityQuery);
-        //userActivityDOList = null;
+        userActivityDOList = null;
         userActivityDOList.stream().forEach(userActivityDO -> {
             userActivityDO.setDel(DelEnum.DELETED.getCode());
             userActivityDO.setModifyDate(new Date());
