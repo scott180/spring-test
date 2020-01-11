@@ -17,7 +17,7 @@
             parameterType="com.xu.spring.test.dal.query.UserActivityQuery">
         select
         <include refid="Base_Column_List"/>
-        from userActivity
+        from user_activity
         <where>
             <include refid="where_base_query"/>
         </where>
@@ -26,14 +26,14 @@
 
     <select id="queryUserActivityListCount" resultType="java.lang.Long"
             parameterType="com.xu.spring.test.dal.query.UserActivityQuery">
-        select count(*) from userActivity
+        select count(*) from user_activity
         <where>
             <include refid="where_base_query"/>
         </where>
     </select>
     <update id="updateBatch" parameterType="list" keyProperty="id" useGeneratedKeys="true">
         <foreach collection="list" index="index" item="item" open="" separator=";" close="">
-            update userActivity
+            update user_activity
             <set>
                 userId = #{item.userId,jdbcType=BIGINT},
                 activityId = #{item.activityId,jdbcType=BIGINT},

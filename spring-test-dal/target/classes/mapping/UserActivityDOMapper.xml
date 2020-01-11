@@ -20,15 +20,15 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select
     <include refid="Base_Column_List" />
-    from userActivity
+    from user_activity
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from userActivity
+    delete from user_activity
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
-    insert into userActivity (id, userId, activityId,
+    insert into user_activity (id, userId, activityId,
     del, cancel, creator,
     modifier, createDate, modifyDate
     )
@@ -38,7 +38,7 @@
     )
   </insert>
   <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
-    insert into userActivity
+    insert into user_activity
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -99,7 +99,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
-    update userActivity
+    update user_activity
     <set >
       <if test="userId != null" >
         userId = #{userId,jdbcType=BIGINT},
@@ -129,7 +129,7 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
-    update userActivity
+    update user_activity
     set userId = #{userId,jdbcType=BIGINT},
     activityId = #{activityId,jdbcType=BIGINT},
     del = #{del,jdbcType=INTEGER},
