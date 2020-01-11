@@ -57,4 +57,8 @@ activity/joinActivity
 取消活动
 activity/cancelActivity
 
+>事务配置
+https://blog.csdn.net/qq_38637066/article/details/82791228
+https://msd.misuland.com/pd/2884250171976189972
+
 

@@ -22,7 +22,6 @@ import org.springframework.web.util.HtmlUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -144,6 +143,7 @@ public class ActivityServiceImpl implements ActivityService {
         UserActivityQuery userActivityQuery = new UserActivityQuery();
         userActivityQuery.setActivityId(id);
         List<UserActivityDO> userActivityDOList = userActivityDOMapper.queryUserActivityList(userActivityQuery);
+        //userActivityDOList = null;
         userActivityDOList.stream().forEach(userActivityDO -> {
             userActivityDO.setDel(DelEnum.DELETED.getCode());
             userActivityDO.setModifyDate(new Date());
