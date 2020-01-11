@@ -139,7 +139,16 @@ public class ActivityServiceImpl implements ActivityService {
             return Result.error(ResultEnum.RECORD_NOT_EXIST);
         }
         activityDO.setDel(DelEnum.DELETED.getCode());
+        activityDO.setModifyDate(new Date());
         activityDOMapper.updateByPrimaryKey(activityDO);
+        UserActivityQuery userActivityQuery = new UserActivityQuery();
+        userActivityQuery.setActivityId(id);
+        List<UserActivityDO> userActivityDOList = userActivityDOMapper.queryUserActivityList(userActivityQuery);
+        userActivityDOList.stream().forEach(userActivityDO -> {
+            userActivityDO.setDel(DelEnum.DELETED.getCode());
+            userActivityDO.setModifyDate(new Date());
+        });
+        userActivityDOMapper.updateBatch(userActivityDOList);
         return result;
     }
 }

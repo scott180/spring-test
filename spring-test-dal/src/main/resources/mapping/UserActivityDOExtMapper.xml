@@ -38,12 +38,13 @@
                 userId = #{item.userId,jdbcType=BIGINT},
                 activityId = #{item.activityId,jdbcType=BIGINT},
                 cancel = #{item.cancel,jdbcType=INTEGER},
+                del = #{item.del,jdbcType=INTEGER},
                 creator = #{item.creator,jdbcType=VARCHAR},
                 modifier = #{item.modifier,jdbcType=VARCHAR},
                 createDate = #{item.createDate,jdbcType=TIMESTAMP},
                 modifyDate = #{item.modifyDate,jdbcType=TIMESTAMP}
             </set>
-            WHERE id = #{item.id,jdbcType=INTEGER}
+            WHERE id = #{item.id,jdbcType=BIGINT}
         </foreach>
     </update>
 </mapper>

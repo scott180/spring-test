@@ -10,6 +10,8 @@ public class UserActivityDO implements Serializable {
 
     private Long activityId;
 
+    private Integer del;
+
     private Integer cancel;
 
     private String creator;
@@ -22,10 +24,11 @@ public class UserActivityDO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public UserActivityDO(Long id, Long userId, Long activityId, Integer cancel, String creator, String modifier, Date createDate, Date modifyDate) {
+    public UserActivityDO(Long id, Long userId, Long activityId, Integer del, Integer cancel, String creator, String modifier, Date createDate, Date modifyDate) {
         this.id = id;
         this.userId = userId;
         this.activityId = activityId;
+        this.del = del;
         this.cancel = cancel;
         this.creator = creator;
         this.modifier = modifier;
@@ -59,6 +62,14 @@ public class UserActivityDO implements Serializable {
 
     public void setActivityId(Long activityId) {
         this.activityId = activityId;
+    }
+
+    public Integer getDel() {
+        return del;
+    }
+
+    public void setDel(Integer del) {
+        this.del = del;
     }
 
     public Integer getCancel() {
@@ -116,6 +127,7 @@ public class UserActivityDO implements Serializable {
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
                 && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
                 && (this.getActivityId() == null ? other.getActivityId() == null : this.getActivityId().equals(other.getActivityId()))
+                && (this.getDel() == null ? other.getDel() == null : this.getDel().equals(other.getDel()))
                 && (this.getCancel() == null ? other.getCancel() == null : this.getCancel().equals(other.getCancel()))
                 && (this.getCreator() == null ? other.getCreator() == null : this.getCreator().equals(other.getCreator()))
                 && (this.getModifier() == null ? other.getModifier() == null : this.getModifier().equals(other.getModifier()))
@@ -130,6 +142,7 @@ public class UserActivityDO implements Serializable {
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
         result = prime * result + ((getActivityId() == null) ? 0 : getActivityId().hashCode());
+        result = prime * result + ((getDel() == null) ? 0 : getDel().hashCode());
         result = prime * result + ((getCancel() == null) ? 0 : getCancel().hashCode());
         result = prime * result + ((getCreator() == null) ? 0 : getCreator().hashCode());
         result = prime * result + ((getModifier() == null) ? 0 : getModifier().hashCode());
@@ -147,6 +160,7 @@ public class UserActivityDO implements Serializable {
         sb.append(", id=").append(id);
         sb.append(", userId=").append(userId);
         sb.append(", activityId=").append(activityId);
+        sb.append(", del=").append(del);
         sb.append(", cancel=").append(cancel);
         sb.append(", creator=").append(creator);
         sb.append(", modifier=").append(modifier);

@@ -6,6 +6,7 @@
       <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="userId" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="activityId" jdbcType="BIGINT" javaType="java.lang.Long" />
+      <arg column="del" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="cancel" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="creator" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="modifier" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -14,7 +15,7 @@
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
-    id, userId, activityId, cancel, creator, modifier, createDate, modifyDate
+    id, userId, activityId, del, cancel, creator, modifier, createDate, modifyDate
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select
@@ -28,11 +29,13 @@
   </delete>
   <insert id="insert" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     insert into userActivity (id, userId, activityId,
-    cancel, creator, modifier,
-    createDate, modifyDate)
+    del, cancel, creator,
+    modifier, createDate, modifyDate
+    )
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{activityId,jdbcType=BIGINT},
-    #{cancel,jdbcType=INTEGER}, #{creator,jdbcType=VARCHAR}, #{modifier,jdbcType=VARCHAR},
-    #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP})
+    #{del,jdbcType=INTEGER}, #{cancel,jdbcType=INTEGER}, #{creator,jdbcType=VARCHAR},
+    #{modifier,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP}
+    )
   </insert>
   <insert id="insertSelective" parameterType="com.xu.spring.test.dal.model.UserActivityDO" >
     insert into userActivity
@@ -45,6 +48,9 @@
       </if>
       <if test="activityId != null" >
         activityId,
+      </if>
+      <if test="del != null" >
+        del,
       </if>
       <if test="cancel != null" >
         cancel,
@@ -72,6 +78,9 @@
       <if test="activityId != null" >
         #{activityId,jdbcType=BIGINT},
       </if>
+      <if test="del != null" >
+        #{del,jdbcType=INTEGER},
+      </if>
       <if test="cancel != null" >
         #{cancel,jdbcType=INTEGER},
       </if>
@@ -98,6 +107,9 @@
       <if test="activityId != null" >
         activityId = #{activityId,jdbcType=BIGINT},
       </if>
+      <if test="del != null" >
+        del = #{del,jdbcType=INTEGER},
+      </if>
       <if test="cancel != null" >
         cancel = #{cancel,jdbcType=INTEGER},
       </if>
@@ -120,6 +132,7 @@
     update userActivity
     set userId = #{userId,jdbcType=BIGINT},
     activityId = #{activityId,jdbcType=BIGINT},
+    del = #{del,jdbcType=INTEGER},
     cancel = #{cancel,jdbcType=INTEGER},
     creator = #{creator,jdbcType=VARCHAR},
     modifier = #{modifier,jdbcType=VARCHAR},
