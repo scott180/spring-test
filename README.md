@@ -41,6 +41,8 @@ https://msd.misuland.com/pd/2884250171976189972
 - aop配置
 ```
 https://www.cnblogs.com/moris5013/p/11026653.html
+
+https://blog.csdn.net/hxpjava1/article/details/55504513  aop执行顺序
 ```
 - log配置
 ```
