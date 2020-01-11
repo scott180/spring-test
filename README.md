@@ -67,6 +67,7 @@ https://www.cnblogs.com/moris5013/p/11026653.html
 
 >log配置
 https://www.cnblogs.com/bigdataZJ/p/springboot-log.html
+https://blog.csdn.net/appleyk/article/details/78717388
 
 >浏览器 http请求插件
 RESTED

@@ -27,14 +27,14 @@ public class AdviceAspectLogConfig {
      * 切入点：修饰符是public ,返回值任意类型，  service包和他的子包，以Service结尾的类，任意的方法
      */
     @Pointcut("execution(* com.xu.spring.test.*.*.*(..))")
-    public void matchServiceMethod() {
+    public void aroundMethod() {
     }
 
 
     /**
      * 可以在方法执行的前后添加非功能性的代码
      */
-    @Around("matchServiceMethod()")
+    @Around("aroundMethod()")
     public java.lang.Object aroundMethod(ProceedingJoinPoint joinPoint) {
         java.lang.Object result = null;
         try {
