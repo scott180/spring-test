@@ -56,10 +56,11 @@ RESTED
  <h2 id="interface"></h2>
 
 ### 2、接口说明
-```
-测试  http://localhost:8080/hello
 
-测试  http://localhost:8080/user/selectById?id=1
+[测试hello]( http://localhost:8080/user/hello )  & [测试]( http://localhost:8080/user/selectById?id=1 )
+
+```
+mysqldump -uroot -p12344 test >d:\\test.sql
 
 用户列表 post
 http://localhost:8080/user/queryUserList

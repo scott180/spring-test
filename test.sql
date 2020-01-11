@@ -48,7 +48,7 @@ CREATE TABLE `activity` (
 
 LOCK TABLES `activity` WRITE;
 /*!40000 ALTER TABLE `activity` DISABLE KEYS */;
-INSERT INTO `activity` VALUES (1,'周六凤凰山','2020-01-04 09:00:00','2020-01-04 18:00:00','凤凰山','1','&lt;div&gt;hello world凤凰山&lt;/div&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt; ','admin',0,0,0.00,'admin','admin','2020-01-01 18:58:06','2020-01-01 18:58:10'),(2,'周日电影','2020-01-04 14:00:00','2020-01-04 18:00:00','电影院','1','五道口电影院','admin',0,0,0.00,'admin','admin','2020-01-01 18:58:06','2020-01-01 18:58:10'),(3,'武功山之旅',NULL,NULL,'武功山',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'武功山之旅',NULL,NULL,'武功山',NULL,'',NULL,NULL,0,NULL,NULL,NULL,'2020-01-04 18:54:27','2020-01-04 18:54:27'),(5,'武功山之旅',NULL,NULL,'武功山',NULL,'&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.cities {\n    background-color:black;\n    color:white;\n    margin:20px;\n    padding:20px;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n\n&lt;div class=&quot;cities&quot;&gt;\n&lt;h2&gt;London&lt;/h2&gt;\n&lt;p&gt;\n活动介绍 活动主题  London is the capital city of England. \nIt is the most populous city in the United Kingdom, \nwith a metropolitan area of over 13 million inhabitants.\n&lt;/p&gt;\n&lt;/div&gt; \n\n&lt;/body&gt;\n&lt;/html&gt;',NULL,NULL,0,NULL,NULL,NULL,'2020-01-04 19:08:22','2020-01-04 19:08:22'),(6,'武功山之旅',NULL,NULL,'武功山',NULL,'&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.cities {\n    background-color:black;\n    color:white;\n    margin:20px;\n    padding:20px;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n\n&lt;div class=&quot;cities&quot;&gt;\n&lt;h2&gt;London&lt;/h2&gt;\n&lt;p&gt;\n活动介绍 活动主题  London is the capital city of England. \nIt is the most populous city in the United Kingdom, \nwith a metropolitan area of over 13 million inhabitants.\n&lt;/p&gt;\n&lt;/div&gt; \n\n&lt;/body&gt;\n&lt;/html&gt;',NULL,NULL,0,NULL,NULL,NULL,'2020-01-04 19:09:20','2020-01-04 19:09:20'),(7,'武功山之旅','2020-01-04 09:00:00','2020-01-04 14:00:00','武功山',NULL,'&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.cities {\n    background-color:black;\n    color:white;\n    margin:20px;\n    padding:20px;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n\n&lt;div class=&quot;cities&quot;&gt;\n&lt;h2&gt;London&lt;/h2&gt;\n&lt;p&gt;\n活动介绍 活动主题  London is the capital city of England. \nIt is the most populous city in the United Kingdom, \nwith a metropolitan area of over 13 million inhabitants.\n&lt;/p&gt;\n&lt;/div&gt; \n\n&lt;/body&gt;\n&lt;/html&gt;',NULL,NULL,1,NULL,NULL,NULL,'2020-01-04 19:11:11','2020-01-04 19:11:11');
+INSERT INTO `activity` VALUES (1,'周六凤凰山','2020-01-04 09:00:00','2020-01-04 18:00:00','凤凰山','1','&lt;div&gt;hello world凤凰山&lt;/div&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt; ','admin',0,1,0.00,'admin','admin','2020-01-01 18:58:06','2020-01-11 19:03:21'),(2,'周日电影','2020-01-04 14:00:00','2020-01-04 18:00:00','电影院','1','五道口电影院','admin',0,0,0.00,'admin','admin','2020-01-01 18:58:06','2020-01-01 18:58:10'),(3,'武功山之旅',NULL,NULL,'武功山',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'武功山之旅',NULL,NULL,'武功山',NULL,'',NULL,NULL,0,NULL,NULL,NULL,'2020-01-04 18:54:27','2020-01-04 18:54:27'),(5,'武功山之旅',NULL,NULL,'武功山',NULL,'&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.cities {\n    background-color:black;\n    color:white;\n    margin:20px;\n    padding:20px;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n\n&lt;div class=&quot;cities&quot;&gt;\n&lt;h2&gt;London&lt;/h2&gt;\n&lt;p&gt;\n活动介绍 活动主题  London is the capital city of England. \nIt is the most populous city in the United Kingdom, \nwith a metropolitan area of over 13 million inhabitants.\n&lt;/p&gt;\n&lt;/div&gt; \n\n&lt;/body&gt;\n&lt;/html&gt;',NULL,NULL,0,NULL,NULL,NULL,'2020-01-04 19:08:22','2020-01-04 19:08:22'),(6,'武功山之旅',NULL,NULL,'武功山',NULL,'&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.cities {\n    background-color:black;\n    color:white;\n    margin:20px;\n    padding:20px;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n\n&lt;div class=&quot;cities&quot;&gt;\n&lt;h2&gt;London&lt;/h2&gt;\n&lt;p&gt;\n活动介绍 活动主题  London is the capital city of England. \nIt is the most populous city in the United Kingdom, \nwith a metropolitan area of over 13 million inhabitants.\n&lt;/p&gt;\n&lt;/div&gt; \n\n&lt;/body&gt;\n&lt;/html&gt;',NULL,NULL,0,NULL,NULL,NULL,'2020-01-04 19:09:20','2020-01-04 19:09:20'),(7,'武功山之旅','2020-01-04 09:00:00','2020-01-04 14:00:00','武功山',NULL,'&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;style&gt;\n.cities {\n    background-color:black;\n    color:white;\n    margin:20px;\n    padding:20px;\n} \n&lt;/style&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n\n&lt;div class=&quot;cities&quot;&gt;\n&lt;h2&gt;London&lt;/h2&gt;\n&lt;p&gt;\n活动介绍 活动主题  London is the capital city of England. \nIt is the most populous city in the United Kingdom, \nwith a metropolitan area of over 13 million inhabitants.\n&lt;/p&gt;\n&lt;/div&gt; \n\n&lt;/body&gt;\n&lt;/html&gt;',NULL,NULL,1,NULL,NULL,NULL,'2020-01-04 19:11:11','2020-01-04 19:11:11');
 /*!40000 ALTER TABLE `activity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,16 +87,17 @@ INSERT INTO `user` VALUES (1,'admin',NULL,'管理员',1,30,'安徽','芜湖','ad
 UNLOCK TABLES;
 
 --
--- Table structure for table `userActivity`
+-- Table structure for table `user_activity`
 --
 
-DROP TABLE IF EXISTS `userActivity`;
+DROP TABLE IF EXISTS `user_activity`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `userActivity` (
+CREATE TABLE `user_activity` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
   `userId` bigint(11) NOT NULL COMMENT '用户id',
   `activityId` bigint(11) NOT NULL COMMENT '活动id',
+  `del` int(11) DEFAULT NULL COMMENT '是否删除',
   `cancel` int(255) DEFAULT NULL COMMENT '是否取消',
   `creator` varchar(255) DEFAULT NULL COMMENT '创建人',
   `modifier` varchar(255) DEFAULT NULL COMMENT '修改人',
@@ -107,13 +108,13 @@ CREATE TABLE `userActivity` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `userActivity`
+-- Dumping data for table `user_activity`
 --
 
-LOCK TABLES `userActivity` WRITE;
-/*!40000 ALTER TABLE `userActivity` DISABLE KEYS */;
-INSERT INTO `userActivity` VALUES (5,2,6,1,NULL,NULL,'2020-01-04 19:48:25','2020-01-04 20:06:38'),(6,1,1,1,NULL,NULL,'2020-01-04 20:07:28','2020-01-05 14:08:50'),(7,1,1,0,NULL,NULL,'2020-01-05 14:23:13','2020-01-05 14:23:13');
-/*!40000 ALTER TABLE `userActivity` ENABLE KEYS */;
+LOCK TABLES `user_activity` WRITE;
+/*!40000 ALTER TABLE `user_activity` DISABLE KEYS */;
+INSERT INTO `user_activity` VALUES (5,2,6,NULL,1,NULL,NULL,'2020-01-04 19:48:25','2020-01-04 20:06:38'),(6,1,1,1,1,NULL,NULL,'2020-01-04 20:07:28','2020-01-11 18:17:03'),(7,1,1,1,0,NULL,NULL,'2020-01-05 14:23:13','2020-01-11 18:17:03');
+/*!40000 ALTER TABLE `user_activity` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -125,4 +126,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-05 14:25:32
+-- Dump completed on 2020-01-11 23:10:27
